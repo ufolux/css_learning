@@ -1,0 +1,15 @@
+body {
+    
+}
+
+.menu-bar {
+    height: 20px;
+    text-align: end;
+    font-size: 14px;
+    box-shadow: 1px 1px #e7e7e7
+}
+
+.menu-bar a {
+    color: #555;
+    font-weight: bold;
+}
