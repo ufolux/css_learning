@@ -3,13 +3,60 @@ body {
 }
 
 .menu-bar {
-    height: 20px;
+    height: 32px;
     text-align: end;
     font-size: 14px;
-    box-shadow: 1px 1px #e7e7e7
+    box-shadow: 1px 1px #e7e7e7;
+    display: flex;
+    justify-content: space-between;
 }
 
-.menu-bar a {
+.menu-bar-weather {
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar-weather > span {
+    margin-right: 10px;
+}
+
+.weather-icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-bar-weather:first-child {
+    margin-left: 20px;
+}
+
+.menu-bar-weather > em {
+    color: #399fbf;
+    margin-right: 10px;
+}
+
+
+.menu-bar-btn {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-bar-btn > a:nth-last-child(n+2) {
     color: #555;
     font-weight: bold;
+    margin-right: 25px;
+}
+
+.menu-bar-btn > a:last-child {
+    background-color: #398bfb;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: 86px;
+    text-align: center;
+    line-height: 32px;
 }
