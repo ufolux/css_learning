@@ -140,7 +140,122 @@ body {
     color: white;
 }
 
+/* 推荐 */
+.recom-content-wrapper {
+    width: 895px;
+    margin: 0 auto;
+}
 
-.qrcode-img {
-    
+.recom-content-in {
+    display: flex;
+    flex-direction: column;
+}
+
+.recom-nav-bar {
+    display: flex;
+    align-items: center;
+    border: #e7e7e7 solid 1px;
+}
+
+.nav-btn {
+    border: none;
+    outline-style: none;
+    font-size: 16px;
+    width: 80px;
+    height: 39px;
+}
+
+.nav-btn::selection {
+    color: white;
+    background-color: #9a9da2;   
+}
+
+.nav-btn:hover {
+    color: white;
+    background-color: #a7a7a7;
+}
+
+.nav-my-fav {
+    width: 124px;
+}
+
+.nav-my-fav::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    background: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mancard/img/card_setts_fdb17359.png) no-repeat -15px 0;
+}
+
+.nav-settings {
+    margin-left: auto;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mancard/img/card_setts_fdb17359.png) no-repeat -121px -49px;
+}
+
+.nav-settings:hover {
+    background: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mancard/img/card_setts_fdb17359.png) no-repeat -121px -49px; 
+}
+
+.recom-content {
+    display: flex;
+}
+
+.feeds {
+    flex: 1;
+}
+
+/* 右边热点 */
+.hot-spot {
+    box-sizing: border-box;
+    width: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hot-spot-title {
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hot-spot-title > h2 {
+    font-size: 14px; 
+}
+
+.hot-spot-title > a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.hot-spot-title > a::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/img/news/news_88aeb6fe.png) -23px -25px no-repeat;
+}
+
+.hot-spot > ul {
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+}
+
+.hot-spot > ul > li {
+    display: inline-block;
+    line-height: 34px;
+    width: 145px;
+    height: 34px;
+}
+
+.hot-spot a {
+    text-decoration: none;
 }
