@@ -1,6 +1,7 @@
 body {
     min-width: 1000px;
     height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .menu-bar {
@@ -15,7 +16,6 @@ body {
 .menu-bar-weather {
     display: flex;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .menu-bar-weather > span {
@@ -49,7 +49,6 @@ body {
 
 .menu-bar-btn {
     display: flex;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -149,12 +148,13 @@ body {
 .recom-content-in {
     display: flex;
     flex-direction: column;
+    border: #e7e7e7 solid 1px;
 }
 
 .recom-nav-bar {
     display: flex;
     align-items: center;
-    border: #e7e7e7 solid 1px;
+    border-bottom: #e7e7e7 solid 1px;
 }
 
 .nav-btn {
@@ -202,6 +202,7 @@ body {
 }
 
 .recom-content {
+    padding: 0 25px 0 25px;
     display: flex;
 }
 
@@ -212,15 +213,13 @@ body {
 /* 右边热点 */
 .hot-spot {
     box-sizing: border-box;
-    width: 300px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 275px;
     display: flex;
     flex-direction: column;
 }
 
 
 .hot-spot-title {
-    padding-right: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,10 +251,63 @@ body {
 .hot-spot > ul > li {
     display: inline-block;
     line-height: 34px;
-    width: 145px;
+    width: 135px;
     height: 34px;
 }
 
 .hot-spot a {
     text-decoration: none;
+}
+
+/* content */
+.recom-tip {
+    color: #999;
+    margin-top: 10px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.recom-tip .tips-icon {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/img/news/news_88aeb6fe.png) no-repeat -45px -1px;
+}
+
+.recom-tip .tips-content {
+    margin: 0 10px 0 10px;
+}
+
+.recom-tip .divider {
+    display: inline-block;
+    background: #e2e2e2;
+    width: 172px;
+    height: 1px;
+}
+
+.recom-feeds {
+}
+
+.feed-style1 {
+    
+}
+
+.feed-style1 h2 {
+    font-size: 18px;
+}
+
+.feeds {
+
+}
+
+.feed-style1 .feeds-content {
+    
+}
+
+.feed-style1 .feeds-content > img {
+    height: 119px;
+    width: 179px;
 }
