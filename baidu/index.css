@@ -8,7 +8,8 @@ body {
     height: 32px;
     text-align: end;
     font-size: 14px;
-    box-shadow: 1px 1px #e7e7e7;
+    box-shadow: 1px 1px 1px #e7e7e7;
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -105,6 +106,7 @@ body {
     width: 450px;
     height: 36px;
     padding: 0 10px 0 10px;  
+    font-size: 14px;
 }
 
 .mic {
