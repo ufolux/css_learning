@@ -1,7 +1,7 @@
 body {
     min-width: 1000px;
     height: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .menu-bar {
@@ -73,6 +73,7 @@ body {
 
 .mainfocus {
    height: 100%;
+   min-height: 293px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -206,10 +207,7 @@ body {
 .recom-content {
     padding: 0 25px 0 25px;
     display: flex;
-}
-
-.feeds {
-    flex: 1;
+    justify-content: space-between;
 }
 
 /* 右边热点 */
@@ -264,7 +262,6 @@ body {
 /* content */
 .recom-tip {
     color: #999;
-    margin-top: 10px;
     font-size: 13px;
     display: flex;
     flex-direction: row;
@@ -279,10 +276,6 @@ body {
     background: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/img/news/news_88aeb6fe.png) no-repeat -45px -1px;
 }
 
-.recom-tip .tips-content {
-    margin: 0 10px 0 10px;
-}
-
 .recom-tip .divider {
     display: inline-block;
     background: #e2e2e2;
@@ -290,26 +283,78 @@ body {
     height: 1px;
 }
 
-.recom-feeds {
+.feeds {
+    padding-top: 21px;
 }
 
 .feed-style1 {
-    
+    border-bottom: 1px solid rgba(100, 100, 100, 0.1);
 }
 
 .feed-style1 h2 {
+    margin: 0;
     font-size: 18px;
-}
-
-.feeds {
-
+    padding: 20px 0 12px 0;
 }
 
 .feed-style1 .feeds-content {
-    
+    font-size: 0;
 }
 
 .feed-style1 .feeds-content > img {
     height: 119px;
     width: 179px;
+    margin-right: 1px;
+}
+
+.feed-timestamp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.feed-timestamp > span {
+    display: inline-block;
+    line-height: 40px;
+    font-size: 13px;
+    margin-right: 10px;
+    color: #999;
+}
+
+
+.feed-style2 {
+    padding: 20px 0 12px 0; 
+    border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+    display: flex;
+}
+
+.feed2-img-wrapper > img {
+    height: 119px;
+    width: 179px;
+}
+
+.feed2-title-wrapper {
+    padding-left: 21px;
+}
+
+.feed2-title-wrapper > h2 {
+    font-size: 18px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    min-width: inherit;
+    color: #999;
+    font-size: 12px;
+}
+
+.footer > div {
+    display: flex;
+    align-items: center;
 }
